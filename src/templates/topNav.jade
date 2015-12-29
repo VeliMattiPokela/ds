@@ -1,0 +1,29 @@
+#topNav.panel
+    .navWrapper
+        .topNavContent
+            .logo
+                h1.bonus(onClick="parent.location='index.html'") dogsquare
+            .profile
+                h1
+                    .fa.fa-bars(ng-click="vm.openSideMenu()")
+    .sideMenu(ng-class="{active: vm.activeSideMenu}")
+        .sideMenuWrapper
+            h3 MENU
+            .hr
+            h4
+                span.fa.fa-user
+                | #{""} Omat tiedot
+            .hr
+            h4
+                span.fa.fa-paw
+                | #{""} Omat koirat
+            .hr
+            h4
+                span.fa.fa-exclamation-triangle
+                | #{""} Ilmoita puuttuvasta puistosta tai tiedosta
+            .hr
+            h4.bonus
+                span.fa.fa-sign-out
+                | #{""} Kirjaudu ulos
+
+

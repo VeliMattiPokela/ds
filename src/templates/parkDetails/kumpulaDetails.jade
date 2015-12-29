@@ -1,0 +1,82 @@
+.parkDetails
+    .mainPicture
+        img(src="img/koirapuisto2.jpg")
+        .parkDetailsHeading
+            h3.center Kumpulan koirapuisto
+
+
+    .parkQuickSummaryWrapper
+        .row
+            .parkQuickSummarySize.panel
+                p Koko
+                h4 M
+            .parkQuickSummaryCount.panel
+                p Koiria päivässä
+                h4 ~ 13
+            .parkQuickSummaryCount.panel
+                p 2h ennuste
+                h4 -3 °C #{""}
+                    span.fa.fa-sun-o.notify
+            .parkQuickSummaryCount.panel
+                p Etäisyys
+                h4 134 m
+    .row
+        .parkDetailsButtonWrapper
+            .checkInButton
+                button
+                    span.fa.fa-bullseye
+                    | #{""} Kirjaudu puistoon
+            .addToFavoritesButton
+                button.secondary
+                    span.fa.fa-heart-o
+                    | #{""} Lisää suosikiksi
+
+    .mainDetails
+        .mainDetailsHeading
+            h3 Puistossa tällä hetkellä
+        .mainDetailsWrapper
+            .row
+                .mainDetailsColumn.left
+                    img.center(src="img/dogIconSmall.png")
+                .mainDetailsColumn.right
+                    h4.bonus Pieniä koiria (2)
+                    p.secondary 14:30
+                        span.strong #{""} Bedro (Mäyräkoira) #{""}
+                        span.fa.fa-mars
+                    p 13:55
+                        span.strong #{""} Anonyymi #{""}
+                        span.fa.fa-venus
+                    p 13:52
+                        span.strong #{""} Cico (Mopsi) #{""}
+                        span.fa.fa-mars
+            .row
+                .mainDetailsColumn.left
+                    img.center(src="img/dogIcon.png")
+                .mainDetailsColumn.right
+                    h4.bonus Isoja koiria (2)
+                    p 14:05
+                        span.strong #{""} Bongo (Venäjänvinttikoira) #{""}
+                        span.fa.fa-venus
+                    p 13:55
+                        span.strong #{""} Miisu (Puolanvinttikoira) #{""}
+                        span.fa.fa-venus
+                        span.fa.fa-star.notify
+
+
+
+    .mainDetails.history
+        .mainDetailsHeading
+            h3 Edelliset kävijät
+        .mainDetailsColumn.history
+            p 12.12.2015 12:00
+            p.strong #{""} Miisu (Puolanvinttikoira) #{""}
+                span.fa.fa-venus
+
+
+    .mainDetails
+        .mainDetailsHeading
+            h3 Tietoa puistosta
+        .mainDetailsWrapper
+            p.center Veli kulta, veikkoseni, kaunis kasvinkumppalini! Lähe nyt kanssa laulamahan, saa kera sanelemahan yhtehen yhyttyämme, kahta'alta käytyämme! Harvoin yhtehen yhymme, saamme toinen toisihimme näillä raukoilla rajoilla, poloisilla Pohjan mailla.
+            br
+            button.secondary Ilmoita virheellisistä tiedoista

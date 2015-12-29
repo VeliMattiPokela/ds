@@ -1,0 +1,5 @@
+.DS_Store
+.idea/
+builds/
+img bank/
+node_modules/

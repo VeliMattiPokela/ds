@@ -1,0 +1,209 @@
+/*
+button-mixin(main-color)
+	// highlight-color = rgba(#fff, 0.7)
+	// border: 1px solid main-color
+	// background-color: main-color
+	// box-shadow: 0 1px 0 highlight-color inset
+
+	&:not([disabled])
+
+		&:hover
+			background-color: darken(main-color, 10%)
+
+		&:active
+			background-color: rgba(main-color, 0.7)
+			text-shadow: 1px 1px 0 main-color
+
+button
+	display: inline-block
+	padding: 0.5em 1em
+	color: #fff
+	font-size: 1.4rem
+	text-decoration: none
+	-webkit-font-smoothing: antialiased
+
+	&::-moz-focus-inner
+		border: 0
+		padding: 1px 0 0 0
+
+	&[disabled]
+		border: 1px solid medium-grey
+		background-color: medium-grey
+		box-shadow: none
+		cursor: default
+
+	button-mixin(turquoise)
+
+button.small
+	padding: 0.4rem 0.6rem
+	padding-top: 0.3rem
+	font-size: 1.3rem
+	line-height: 1em
+
+button.remove
+	button-mixin(alert-red)
+
+button.empty
+	button-mixin(alert-red)
+
+button.cancel
+	button-mixin(medium-grey)
+
+a.pdf-link
+	display: inline-block
+	font-size: 1.4rem
+	font-weight: normal
+	line-height: 1em
+	text-transform: none
+	-webkit-font-smoothing: auto
+
+	&:before
+		display: inline-block
+		content: ''
+		width: 1.6rem
+		height: 1.6rem
+		background-image: url('../images/pdficon_small.png')
+		vertical-align: bottom
+		margin-right: 0.6rem
+
+h3 > a.pdf-link
+	color: #fff
+	float: right
+	margin-right: 0.2rem
+
+button.spinner-button
+	position: relative
+	transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all
+
+	.label
+		transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all
+
+	.spinner
+		icon(icon-spinner)
+		font-size: 1.6rem
+		position: absolute
+		top: 50%
+		right: 0.5em
+		margin-top: -0.5em
+		height: 1em
+		color: #fff
+		display: none
+
+form.busy button[type="submit"].spinner-button,
+button[type="button"].spinner-button.busy
+
+	.label
+		margin-right: 1em
+
+	.spinner
+		display: inline
+		animation: spinner 1s steps(9) infinite
+
+	&.small
+
+		.label
+			margin-right: 1.15em
+
+		.spinner
+			right: 0.25em
+
+@keyframes spinner
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(360deg)
+
+		*/
+
+
+/* Buttons by Vellu */
+
+button
+    padding: 0.75em;
+    font-weight: 600;
+    text-align: center
+    text-transform uppercase
+    color: white;
+    font-family $font2
+    font-size 1em
+    margin 0 1em 0.5em 0
+    width 100%
+    background-color: $primary-color;
+    -webkit-border-radius: $border-radius
+    -moz-border-radius: $border-radius
+    border-radius: $border-radius
+    transition: background .2s linear, border-radius .6s ease-in .6s
+    display: inline-block
+    text-decoration none;
+    border none
+
+    &:last-child
+        margin-right 0
+    +max-screen($small-devices)
+        padding 0.7em
+        margin 0 0 1em 0
+        width 100%
+
+
+
+button, button.success, button.bonus, button.secondary
+    &[disabled]
+        background-color rgba(1,1,1,0.1)
+button:hover, button.success:hover, button.bonus:hover, button.secondary:hover
+    &[disabled]
+        background-color rgba(1,1,1,0.1)
+
+
+button.small
+    margin 0.5em 0
+    padding 0.7em
+    font-weight 300
+    margin-right 0.5em
+    &:last-child
+        margin-right 0
+
+button:hover
+    color white
+    background-color darken($primary-color, 10%)
+    -webkit-border-radius: $border-radius
+    -moz-border-radius: $border-radius
+    border-radius: $border-radius
+    text-decoration none
+    cursor pointer
+
+button.success
+    background-color $success-color
+
+button.success:hover
+    background-color #01b258;
+
+button.bonus
+    background-color $bonus-color
+
+button.bonus:hover
+    background-color darken($bonus-color, 10%)
+
+button.plain
+    background-color $plain-color
+    border 1px solid $light-grey-color
+    color $font-color
+
+button.plain:hover
+    background-color $plain-color;
+    border 1px solid #d6d5d5
+
+button.secondary
+    background-color $secondary-color
+
+button.secondary:hover
+    background-color darken($secondary-color, 10%)
+
+button.alert
+    background-color $alert-color
+
+button.alert:hover
+    background-color #fd6165;
+
+
+
+/* Buttons by Vellu ends */

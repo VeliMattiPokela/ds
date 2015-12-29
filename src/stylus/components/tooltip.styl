@@ -1,0 +1,63 @@
+a
+	&.tooltip
+		color $secondary-color
+		text-align center
+		margin 0 0 0 0.3em
+		-webkit-transition: border 100ms ease-out;
+		-moz-transition: border 100ms ease-out;
+		-o-transition: border 100ms ease-out;
+		font-weight 600
+
+
+		strong
+			line-height 2rem
+		&:hover
+			text-decoration none
+			-webkit-transition : border 100ms ease-in;
+			-moz-transition : border 100ms ease-in;
+			-o-transition : border 100ms ease-in;
+			span
+				z-index 99999999
+				display inline
+				border 1px solid $border-color
+				color $font-color
+				background-color #f8f8f8
+				-webkit-box-shadow 0 5px 6px -6px #777
+				-moz-box-shadow 0 5px 6px -6px #777
+				box-shadow 0 5px 6px -6px #777
+				border-radius $border-radius
+				position absolute
+				font-weight 100
+				text-transform none
+				text-align left
+				&:before
+					clear both
+					width: 0;
+					height: 0;
+					border-left: 50px solid transparent;
+					border-right: 50px solid transparent;
+					border-bottom: 100px solid red;
+			.badge-secondary
+				text-align center !important
+
+
+		span
+			display none
+			padding 1em
+			margin-top 2.3rem
+			margin-left -160px
+			width 350px
+			line-height 16px
+
+
+
+.callout
+	position absolute
+	top -15px
+	left 130px
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 15px solid $border-color;
+

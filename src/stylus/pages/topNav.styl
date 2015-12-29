@@ -1,0 +1,40 @@
+#topNav
+    position fixed
+    width 100%
+    background-color $plain-color
+    padding 1rem
+    height $topNavHeight
+    z-index 10
+
+    .topNavContent
+        .logo
+            col(4/12)
+            cursor pointer
+        .profile
+            col(4/12)
+            float right
+            text-align right
+            cursor pointer
+
+    .sideMenu
+        color white
+        height 100vh;
+        position absolute
+        right -1.1rem
+        top $topNavHeight
+        width 0
+        background-color #333333;
+        -webkit-transition: width 1s;
+        -moz-transition: width 1s;
+        transition: width 1s;
+        overflow hidden
+        padding-left 1rem
+        padding-top 1rem
+
+    .sideMenu.active
+        width 25rem
+    .sideMenuWrapper
+        min-width 25rem
+
+
+

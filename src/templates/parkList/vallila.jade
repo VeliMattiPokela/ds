@@ -1,0 +1,26 @@
+.vallila
+    .parkListWrapper
+        .parkListHeading
+            h1 Vallilan koirapuisto
+            p Vallilankuja 12, Kumpula Helsinki
+        .parkListDistance
+            h4
+                span.fa.fa-map-marker
+                | #{""} 1450 m
+        .parkListStatusHeading
+            h2 Puistossa nyt
+        .parkListStatus
+            .smallDogs
+                h1.notify 3
+                img.small.center(src="img/dogIconSmallBlank.png")
+            .largeDogs
+                h1.notify 5
+                img.center(src="img/dogIconBlank.png")
+        .parkListButtons
+            button
+                span.fa.fa-bullseye
+                | #{""} Kirjaudu puistoon
+            button.secondary(onClick="parent.location='#/parkVallila'")
+                span.fa.fa-info-circle
+                | #{""} Lisätietoa puistosta
+

@@ -1,0 +1,23 @@
+{
+  "name": "koirapuistosovellus",
+  "description": "",
+  "main": "",
+  "authors": [
+    "veli-matti.pokela <veli-matti.pokela@siili.fi>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "~1.4.8",
+    "angular-animate": "~1.4.8"
+  }
+}
