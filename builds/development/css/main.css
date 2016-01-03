@@ -6251,24 +6251,6 @@ a.tooltip span {
   margin-top: 2rem;
 }
 
-.kumpula {
-  height: 100vh;
-  background: url("../img/koirapuisto2.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.vallila {
-  height: 100vh;
-  background: url("../img/koirapuisto1.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .parkDetails {
   padding: $topNavHeight 0 8rem 0;
 }
@@ -6320,4 +6302,22 @@ a.tooltip span {
 }
 .parkDetails .mainDetailsColumn.history {
   text-align: center;
+}
+
+.kumpula {
+  height: 100vh;
+  background: url("../img/koirapuisto2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vallila {
+  height: 100vh;
+  background: url("../img/koirapuisto1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
