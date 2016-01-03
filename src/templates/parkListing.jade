@@ -5,9 +5,9 @@
         include parkList/vallila
     .browseParks
         .previousPark
-            button.bonus.fadeAnimate.fast(ng-click="vm.nextPark()", ng-if="vm.activeSideMenu == false")
+            button.bonus.fadeAnimate.fast(ng-click="vm.nextPark()", ng-if="activeSideMenu == false")
                 span.fa.fa-caret-left
         .nextPark
-            button.bonus.fadeAnimate.fast(ng-click="vm.nextPark()", ng-if="vm.activeSideMenu == false")
+            button.bonus.fadeAnimate.fast(ng-click="vm.nextPark()", ng-if="activeSideMenu == false")
                 span.fa.fa-caret-right
 

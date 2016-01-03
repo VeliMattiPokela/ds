@@ -35,6 +35,12 @@ app.controller('dogParksCtrl', function($rootScope){
     vm.testikutsu = 'Tämä js tulee läpi';
 
     // Navigaation menu-toggle //
+    $rootScope.activeSideMenu = false;
+
+    $rootScope.openSideMenu = function(){
+        console.log('avaa menu');
+        $rootScope.activeSideMenu = !$rootScope.activeSideMenu;
+    };
 
     $rootScope.showDropdownMenu = false;
 
