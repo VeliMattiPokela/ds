@@ -3435,6 +3435,120 @@ a.tooltip span {
   min-width: 15rem;
 }
 
+#bottomNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  z-index: 99;
+}
+#bottomNav .bottomNavColumn {
+  text-align: center;
+}
+
+a.tooltip {
+  color: $secondary-color;
+  text-align: center;
+  margin: 0 0 0 0.3em;
+  -webkit-transition: border 100ms ease-out;
+  -moz-transition: border 100ms ease-out;
+  -o-transition: border 100ms ease-out;
+  font-weight: 600;
+}
+a.tooltip strong {
+  line-height: 2rem;
+}
+a.tooltip:hover {
+  text-decoration: none;
+  -webkit-transition: border 100ms ease-in;
+  -moz-transition: border 100ms ease-in;
+  -o-transition: border 100ms ease-in;
+}
+a.tooltip:hover span {
+  z-index: 99999999;
+  display: inline;
+  border: 1px solid $border-color;
+  color: $font-color;
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0 5px 6px -6px #777;
+  -moz-box-shadow: 0 5px 6px -6px #777;
+  box-shadow: 0 5px 6px -6px #777;
+  border-radius: $border-radius;
+  position: absolute;
+  font-weight: 100;
+  text-transform: none;
+  text-align: left;
+}
+a.tooltip:hover span:before {
+  clear: both;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #f00;
+}
+a.tooltip:hover .badge-secondary {
+  text-align: center !important;
+}
+a.tooltip span {
+  display: none;
+  padding: 1em;
+  margin-top: 2.3rem;
+  margin-left: -160px;
+  width: 350px;
+  line-height: 16px;
+}
+.callout {
+  position: absolute;
+  top: -15px;
+  left: 130px;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 15px solid $border-color;
+}
+
+#topNav {
+  position: fixed;
+  width: 100%;
+  background-color: $plain-color;
+  padding: 0.5rem;
+  height: $topNavHeight;
+  z-index: 10;
+}
+#topNav .topNavContent .logo {
+  cursor: pointer;
+}
+#topNav .topNavContent .profile {
+  float: right;
+  text-align: right;
+  cursor: pointer;
+}
+#topNav .sideMenu {
+  color: #fff;
+  height: 100vh;
+  position: absolute;
+  right: -1.1rem;
+  top: $topNavHeight;
+  width: 0;
+  background-color: #333;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  transition: width 1s;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+#topNav .sideMenu.active {
+  width: 15rem;
+}
+#topNav .sideMenuWrapper {
+  min-width: 15rem;
+}
+
 .fadeAnimate {
   -webkit-transition: 0.8s ease-in-out;
 }
@@ -6074,120 +6188,6 @@ ul.no-bullets {
   padding-left: 0;
 }
 
-#bottomNav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5rem;
-  background-color: #333;
-  color: #fff;
-  z-index: 99;
-}
-#bottomNav .bottomNavColumn {
-  text-align: center;
-}
-
-a.tooltip {
-  color: $secondary-color;
-  text-align: center;
-  margin: 0 0 0 0.3em;
-  -webkit-transition: border 100ms ease-out;
-  -moz-transition: border 100ms ease-out;
-  -o-transition: border 100ms ease-out;
-  font-weight: 600;
-}
-a.tooltip strong {
-  line-height: 2rem;
-}
-a.tooltip:hover {
-  text-decoration: none;
-  -webkit-transition: border 100ms ease-in;
-  -moz-transition: border 100ms ease-in;
-  -o-transition: border 100ms ease-in;
-}
-a.tooltip:hover span {
-  z-index: 99999999;
-  display: inline;
-  border: 1px solid $border-color;
-  color: $font-color;
-  background-color: #f8f8f8;
-  -webkit-box-shadow: 0 5px 6px -6px #777;
-  -moz-box-shadow: 0 5px 6px -6px #777;
-  box-shadow: 0 5px 6px -6px #777;
-  border-radius: $border-radius;
-  position: absolute;
-  font-weight: 100;
-  text-transform: none;
-  text-align: left;
-}
-a.tooltip:hover span:before {
-  clear: both;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #f00;
-}
-a.tooltip:hover .badge-secondary {
-  text-align: center !important;
-}
-a.tooltip span {
-  display: none;
-  padding: 1em;
-  margin-top: 2.3rem;
-  margin-left: -160px;
-  width: 350px;
-  line-height: 16px;
-}
-.callout {
-  position: absolute;
-  top: -15px;
-  left: 130px;
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 15px solid $border-color;
-}
-
-#topNav {
-  position: fixed;
-  width: 100%;
-  background-color: $plain-color;
-  padding: 0.5rem;
-  height: $topNavHeight;
-  z-index: 10;
-}
-#topNav .topNavContent .logo {
-  cursor: pointer;
-}
-#topNav .topNavContent .profile {
-  float: right;
-  text-align: right;
-  cursor: pointer;
-}
-#topNav .sideMenu {
-  color: #fff;
-  height: 100vh;
-  position: absolute;
-  right: -1.1rem;
-  top: $topNavHeight;
-  width: 0;
-  background-color: #333;
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  transition: width 1s;
-  overflow: hidden;
-  padding-left: 1rem;
-  padding-top: 1rem;
-}
-#topNav .sideMenu.active {
-  width: 15rem;
-}
-#topNav .sideMenuWrapper {
-  min-width: 15rem;
-}
-
 
 #parkListing .browseParks .previousPark {
   position: absolute;
@@ -6247,6 +6247,24 @@ a.tooltip span {
   overflow-y: scroll;
 }
 
+.kumpula {
+  height: 100vh;
+  background: url("../img/koirapuisto2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vallila {
+  height: 100vh;
+  background: url("../img/koirapuisto1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .parkDetails {
   padding: $topNavHeight 0 8rem 0;
 }
@@ -6298,22 +6316,4 @@ a.tooltip span {
 }
 .parkDetails .mainDetailsColumn.history {
   text-align: center;
-}
-
-.kumpula {
-  height: 100vh;
-  background: url("../img/koirapuisto2.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.vallila {
-  height: 100vh;
-  background: url("../img/koirapuisto1.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }

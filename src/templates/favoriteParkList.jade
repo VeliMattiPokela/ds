@@ -1,3 +1,4 @@
 #subPage
-    .subPageWrapper
+    .subPageWrapper(ng-swipe-left="showActions = true", ng-swipe-right="showActions = false")
         h4 Suosikkipuistot
+        h1(ng-show="showActions") Sinä teit juuri swipen!!

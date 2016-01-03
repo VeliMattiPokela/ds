@@ -1,4 +1,4 @@
-var app = angular.module('dogParks', ['ngRoute', 'ngAnimate']);
+var app = angular.module('dogParks', ['ngRoute', 'ngAnimate', 'ngTouch']);
 
 app.config(function($routeProvider){
 
