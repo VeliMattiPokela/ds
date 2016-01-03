@@ -6075,6 +6075,7 @@ ul.no-bullets {
   padding-left: 0;
 }
 
+
 #bottomNav {
   position: fixed;
   bottom: 0;
@@ -6188,7 +6189,6 @@ a.tooltip span {
 #topNav .sideMenuWrapper {
   min-width: 15rem;
 }
-
 
 #favoriteParkListing .favoriteParkListWrapper {
   padding: 6rem 1rem 8rem 1rem;
