@@ -17,6 +17,14 @@ app.config(function($routeProvider){
         .when('/favoriteParks', {
             templateUrl: 'favoriteParkList.html'
         })
+        .when('/profilePage', {
+            templateUrl: 'profilePage.html'
+        })
+        .when('/savedDogs', {
+            templateUrl: 'savedDogs.html'
+        })
+
+
 
 });
 

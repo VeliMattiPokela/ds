@@ -5,16 +5,16 @@
                 h1.bonus(onClick="parent.location='index.html'") dogsquare
             .profile
                 h1
-                    .fa.fa-bars(ng-click="vm.openSideMenu()")
-    .sideMenu(ng-class="{active: vm.activeSideMenu}")
+                    .fa.fa-bars(ng-click="openSideMenu()")
+    .sideMenu(ng-class="{active: activeSideMenu}")
         .sideMenuWrapper
             h3 MENU
             .hr
-            h4
+            h4(onClick="parent.location='#/profilePage'")
                 span.fa.fa-user
                 | #{""} Omat tiedot
             .hr
-            h4
+            h4(onClick="parent.location='#/savedDogs'")
                 span.fa.fa-paw
                 | #{""} Omat koirat
             .hr

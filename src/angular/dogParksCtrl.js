@@ -1,14 +1,22 @@
-app.controller('dogParksCtrl', function(){
+app.controller('dogParksCtrl', function($rootScope){
 
     var vm = this;
     vm.testikutsu = 'Tämä js tulee läpi';
 
     // Navigaation menu-toggle //
-    vm.activeSideMenu = false;
 
-    vm.openSideMenu = function(){
-        console.log('avaa menu');
-        vm.activeSideMenu = !vm.activeSideMenu;
+    $rootScope.showDropdownMenu = false;
+
+    $rootScope.openSideMenu = function(){
+        $rootScope.activeSideMenu = !$rootScope.activeSideMenu;
+        event.stopPropagation();
+    };
+
+    window.onclick = function() {
+        if ($rootScope.activeSideMenu) {
+            $rootScope.activeSideMenu = false;
+            $rootScope.$apply();
+        }
     };
 
 

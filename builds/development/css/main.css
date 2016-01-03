@@ -2847,11 +2847,6 @@ ul.no-bullets {
   list-style: none;
   padding-left: 0;
 }
-#favoriteParkListing .favoriteParkListWrapper {
-  padding: 6rem 1rem 8rem 1rem;
-  height: 100vh;
-  overflow-y: scroll;
-}
 .parkDetails {
   padding: 4rem 0 8rem 0;
 }
@@ -3262,6 +3257,11 @@ ul.no-bullets {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+#subPage .subPageWrapper {
+  padding: 6rem 1rem 8rem 1rem;
+  height: 100vh;
+  overflow-y: scroll;
 }
 #bottomNav {
   position: fixed;
@@ -6074,7 +6074,6 @@ ul.no-bullets {
   padding-left: 0;
 }
 
-
 #bottomNav {
   position: fixed;
   bottom: 0;
@@ -6189,11 +6188,6 @@ a.tooltip span {
   min-width: 15rem;
 }
 
-#favoriteParkListing .favoriteParkListWrapper {
-  padding: 6rem 1rem 8rem 1rem;
-  height: 100vh;
-  overflow-y: scroll;
-}
 
 #parkListing .browseParks .previousPark {
   position: absolute;
@@ -6245,6 +6239,12 @@ a.tooltip span {
 #parkListing .parkListStatus .largeDogs img {
   opacity: 0.9;
   width: 5rem;
+}
+
+#subPage .subPageWrapper {
+  padding: 6rem 1rem 8rem 1rem;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .parkDetails {
