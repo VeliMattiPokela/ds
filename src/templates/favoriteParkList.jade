@@ -2,3 +2,11 @@
     .subPageWrapper(ng-swipe-left="showActions = true", ng-swipe-right="showActions = false")
         h4 Suosikkipuistot
         h1(ng-show="showActions") Sinä teit juuri swipen!!
+
+        a(class="arrow prev" href="" ng-click="vm.nextSlide()") -
+        a(class="arrow next" href="" ng-click="vm.prevSlide()") +
+        img(ng-repeat="slide in vm.slides" class="slide slide-animation", ng-hide="!vm.isCurrentSlideIndex($index)" ng-src="{{slide.image}}")
+        h4(ng-repeat="slide in vm.slides" class="slide", ng-hide="!vm.isCurrentSlideIndex($index)") {{slide.name}}
+        ul
+            li(ng-repeat="slide in vm.slides")
+                a(href="", ng-class="{active: vm.isCurrentSlideIndex($index)}", ng-click="vm.setCurrentSlideIndex($index)") {{slide.description}}

@@ -1,8 +1,8 @@
-.kumpula
-    .parkListWrapper
+div(ng-repeat="slide in vm.slides" class="{{slide.bgClass}}", ng-hide="!vm.isCurrentSlideIndex($index)")
+    .parkListWrapper(ng-swipe-right="vm.nextSlide()" ng-swipe-left="vm.prevSlide()")
         .parkListHeading
-            h1 Kumpulan koirapuisto
-            p Koirapolku 5, Kumpula Helsinki
+            h1(ng-repeat="slide in vm.slides", ng-hide="!vm.isCurrentSlideIndex($index)") {{slide.name}}
+            p(ng-repeat="slide in vm.slides", ng-hide="!vm.isCurrentSlideIndex($index)") {{slide.parkAddress}}
         .parkListDistance
             h4
                 span.fa.fa-map-marker
@@ -11,10 +11,10 @@
             h2 Puistossa nyt
         .parkListStatus
             .smallDogs
-                h1.notify 1
+                h1.notify(ng-repeat="slide in vm.slides", ng-hide="!vm.isCurrentSlideIndex($index)") {{slide.smallDogAmmount}}
                 img.small.center(src="img/dogIconSmallBlank.png")
             .largeDogs
-                h1.notify 2
+                h1.notify(ng-repeat="slide in vm.slides", ng-hide="!vm.isCurrentSlideIndex($index)") {{slide.bigDogAmmount}}
                 img.center(src="img/dogIconBlank.png")
         .parkListButtons
             button

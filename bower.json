@@ -19,7 +19,7 @@
     "angular": "latest",
     "angular-route": "~1.4.8",
     "angular-animate": "~1.4.8",
-    "angular-touch": "latest"
-
+    "angular-touch": "latest",
+    "gsap": "~1.18.2"
   }
 }
