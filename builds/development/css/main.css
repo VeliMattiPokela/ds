@@ -3283,6 +3283,16 @@ ul.no-bullets {
   -moz-background-size: cover;
   background-size: cover;
 }
+.puisto3 {
+  height: 100vh;
+  background: url("../img/koirapuisto3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 #bottomNav {
   position: fixed;
   bottom: 0;
@@ -3454,6 +3464,7 @@ a.tooltip span {
 #topNav .sideMenuWrapper {
   min-width: 15rem;
 }
+
 
 .fadeAnimate {
   -webkit-transition: 0.8s ease-in-out;
@@ -6094,7 +6105,6 @@ ul.no-bullets {
   padding-left: 0;
 }
 
-
 #bottomNav {
   position: fixed;
   bottom: 0;
@@ -6277,6 +6287,14 @@ a.tooltip span {
 .puisto2 {
   height: 100vh;
   background: url("../img/koirapuisto1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.puisto3 {
+  height: 100vh;
+  background: url("../img/koirapuisto3.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
