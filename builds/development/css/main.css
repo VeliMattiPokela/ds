@@ -2847,43 +2847,13 @@ ul.no-bullets {
   list-style: none;
   padding-left: 0;
 }
-#bottomNav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5rem;
-  background-color: #333;
-  color: #fff;
-  z-index: 99;
-}
-#bottomNav .bottomNavColumn {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 31.33333333333333%;
-  margin-left: 0%;
-  margin-right: 3%;
-  text-align: center;
-}
-#bottomNav .bottomNavColumn:before,
-#bottomNav .bottomNavColumn:after {
-  content: '';
-  display: table;
-}
-#bottomNav .bottomNavColumn:after {
-  clear: both;
-}
-#bottomNav .bottomNavColumn:last-child {
-  margin-right: 0%;
-}
 #favoriteParkListing .favoriteParkListWrapper {
   padding: 6rem 1rem 8rem 1rem;
   height: 100vh;
   overflow-y: scroll;
 }
 .parkDetails {
-  padding: 5rem 0 8rem 0;
+  padding: 4rem 0 8rem 0;
 }
 .parkDetails .parkQuickSummaryWrapper {
   text-align: center;
@@ -3111,7 +3081,7 @@ ul.no-bullets {
   top: 45%;
 }
 #parkListing .parkListWrapper {
-  padding: 6rem 1rem 8rem 1rem;
+  padding: 5rem 1rem 8rem 1rem;
   height: 100vh;
   overflow-y: scroll;
   background-color: rgba(1,1,1,0.65);
@@ -3147,12 +3117,11 @@ ul.no-bullets {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 #parkListing .parkListStatus {
   color: #fff;
   text-align: center;
-  margin-top: 1rem;
   *zoom: 1;
   float: left;
   clear: none;
@@ -3174,7 +3143,7 @@ ul.no-bullets {
 }
 #parkListing .parkListStatus .smallDogs {
   position: relative;
-  height: 12rem;
+  height: 10rem;
   *zoom: 1;
   float: left;
   clear: none;
@@ -3198,7 +3167,7 @@ ul.no-bullets {
   opacity: 0.9;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
   filter: alpha(opacity=90);
-  width: 7rem;
+  width: 5rem;
   position: absolute;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -3214,7 +3183,7 @@ ul.no-bullets {
   transform: translate(-50%, -50%);
 }
 #parkListing .parkListStatus .largeDogs {
-  height: 12rem;
+  height: 10rem;
   position: relative;
   *zoom: 1;
   float: left;
@@ -3239,7 +3208,7 @@ ul.no-bullets {
   opacity: 0.9;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
   filter: alpha(opacity=90);
-  width: 7rem;
+  width: 5rem;
   position: absolute;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -3295,12 +3264,106 @@ ul.no-bullets {
   -moz-background-size: cover;
   background-size: cover;
 }
+#bottomNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  z-index: 99;
+}
+#bottomNav .bottomNavColumn {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  text-align: center;
+}
+#bottomNav .bottomNavColumn:before,
+#bottomNav .bottomNavColumn:after {
+  content: '';
+  display: table;
+}
+#bottomNav .bottomNavColumn:after {
+  clear: both;
+}
+#bottomNav .bottomNavColumn:last-child {
+  margin-right: 0%;
+}
+a.tooltip {
+  color: #808080;
+  text-align: center;
+  margin: 0 0 0 0.3em;
+  -webkit-transition: border 100ms ease-out;
+  -moz-transition: border 100ms ease-out;
+  -o-transition: border 100ms ease-out;
+  font-weight: 600;
+}
+a.tooltip strong {
+  line-height: 2rem;
+}
+a.tooltip:hover {
+  text-decoration: none;
+  -webkit-transition: border 100ms ease-in;
+  -moz-transition: border 100ms ease-in;
+  -o-transition: border 100ms ease-in;
+}
+a.tooltip:hover span {
+  z-index: 99999999;
+  display: inline;
+  border: 1px solid #ededed;
+  color: #565656;
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0 5px 6px -6px #777;
+  -moz-box-shadow: 0 5px 6px -6px #777;
+  -webkit-box-shadow: 0 5px 6px -6px #777;
+  box-shadow: 0 5px 6px -6px #777;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  position: absolute;
+  font-weight: 100;
+  text-transform: none;
+  text-align: left;
+}
+a.tooltip:hover span:before {
+  clear: both;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #f00;
+}
+a.tooltip:hover .badge-secondary {
+  text-align: center !important;
+}
+a.tooltip span {
+  display: none;
+  padding: 1em;
+  margin-top: 2.3rem;
+  margin-left: -160px;
+  width: 350px;
+  line-height: 16px;
+}
+.callout {
+  position: absolute;
+  top: -15px;
+  left: 130px;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 15px solid #ededed;
+}
 #topNav {
   position: fixed;
   width: 100%;
   background-color: #fff;
-  padding: 1rem;
-  height: 5rem;
+  padding: 0.5rem;
+  height: 4rem;
   z-index: 10;
 }
 #topNav .topNavContent .logo {
@@ -3352,7 +3415,7 @@ ul.no-bullets {
   height: 100vh;
   position: absolute;
   right: -1.1rem;
-  top: 5rem;
+  top: 4rem;
   width: 0;
   background-color: #333;
   -webkit-transition: width 1s;
@@ -3367,10 +3430,10 @@ ul.no-bullets {
   padding-top: 1rem;
 }
 #topNav .sideMenu.active {
-  width: 25rem;
+  width: 15rem;
 }
 #topNav .sideMenuWrapper {
-  min-width: 25rem;
+  min-width: 15rem;
 }
 
 .fadeAnimate {
@@ -6025,107 +6088,6 @@ ul.no-bullets {
   text-align: center;
 }
 
-#favoriteParkListing .favoriteParkListWrapper {
-  padding: 6rem 1rem 8rem 1rem;
-  height: 100vh;
-  overflow-y: scroll;
-}
-
-#parkListing .browseParks .previousPark {
-  position: absolute;
-  left: 0;
-  top: 45%;
-}
-#parkListing .browseParks .nextPark {
-  position: absolute;
-  right: 0;
-  top: 45%;
-}
-#parkListing .parkListWrapper {
-  padding: 6rem 1rem 8rem 1rem;
-  height: 100vh;
-  overflow-y: scroll;
-  background-color: rgba(1,1,1,0.65);
-}
-#parkListing .parkListHeading {
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-}
-#parkListing .parkListDistance {
-  text-align: center;
-  color: $notify-color;
-}
-#parkListing .parkListStatusHeading {
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 4rem;
-}
-#parkListing .parkListStatus {
-  color: #fff;
-  text-align: center;
-  margin-top: 1rem;
-}
-#parkListing .parkListStatus .smallDogs {
-  position: relative;
-  height: 12rem;
-}
-#parkListing .parkListStatus .smallDogs img {
-  opacity: 0.9;
-  width: 7rem;
-}
-#parkListing .parkListStatus .largeDogs {
-  height: 12rem;
-  position: relative;
-}
-#parkListing .parkListStatus .largeDogs img {
-  opacity: 0.9;
-  width: 7rem;
-}
-#parkListing .parkListButtons {
-  margin-top: 2rem;
-}
-
-#topNav {
-  position: fixed;
-  width: 100%;
-  background-color: $plain-color;
-  padding: 1rem;
-  height: $topNavHeight;
-  z-index: 10;
-}
-#topNav .topNavContent .logo {
-  cursor: pointer;
-}
-#topNav .topNavContent .profile {
-  float: right;
-  text-align: right;
-  cursor: pointer;
-}
-#topNav .sideMenu {
-  color: #fff;
-  height: 100vh;
-  position: absolute;
-  right: -1.1rem;
-  top: $topNavHeight;
-  width: 0;
-  background-color: #333;
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  transition: width 1s;
-  overflow: hidden;
-  padding-left: 1rem;
-  padding-top: 1rem;
-}
-#topNav .sideMenu.active {
-  width: 25rem;
-}
-#topNav .sideMenuWrapper {
-  min-width: 25rem;
-}
-
-
 a.tooltip {
   color: $secondary-color;
   text-align: center;
@@ -6189,6 +6151,124 @@ a.tooltip span {
   border-bottom: 15px solid $border-color;
 }
 
+#topNav {
+  position: fixed;
+  width: 100%;
+  background-color: $plain-color;
+  padding: 0.5rem;
+  height: $topNavHeight;
+  z-index: 10;
+}
+#topNav .topNavContent .logo {
+  cursor: pointer;
+}
+#topNav .topNavContent .profile {
+  float: right;
+  text-align: right;
+  cursor: pointer;
+}
+#topNav .sideMenu {
+  color: #fff;
+  height: 100vh;
+  position: absolute;
+  right: -1.1rem;
+  top: $topNavHeight;
+  width: 0;
+  background-color: #333;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  transition: width 1s;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+#topNav .sideMenu.active {
+  width: 15rem;
+}
+#topNav .sideMenuWrapper {
+  min-width: 15rem;
+}
+
+
+#favoriteParkListing .favoriteParkListWrapper {
+  padding: 6rem 1rem 8rem 1rem;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#parkListing .browseParks .previousPark {
+  position: absolute;
+  left: 0;
+  top: 45%;
+}
+#parkListing .browseParks .nextPark {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+#parkListing .parkListWrapper {
+  padding: 5rem 1rem 8rem 1rem;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: rgba(1,1,1,0.65);
+}
+#parkListing .parkListHeading {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+#parkListing .parkListDistance {
+  text-align: center;
+  color: $notify-color;
+}
+#parkListing .parkListStatusHeading {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+#parkListing .parkListStatus {
+  color: #fff;
+  text-align: center;
+}
+#parkListing .parkListStatus .smallDogs {
+  position: relative;
+  height: 10rem;
+}
+#parkListing .parkListStatus .smallDogs img {
+  opacity: 0.9;
+  width: 5rem;
+}
+#parkListing .parkListStatus .largeDogs {
+  height: 10rem;
+  position: relative;
+}
+#parkListing .parkListStatus .largeDogs img {
+  opacity: 0.9;
+  width: 5rem;
+}
+#parkListing .parkListButtons {
+  margin-top: 2rem;
+}
+
+.kumpula {
+  height: 100vh;
+  background: url("../img/koirapuisto2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vallila {
+  height: 100vh;
+  background: url("../img/koirapuisto1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .parkDetails {
   padding: $topNavHeight 0 8rem 0;
 }
@@ -6240,22 +6320,4 @@ a.tooltip span {
 }
 .parkDetails .mainDetailsColumn.history {
   text-align: center;
-}
-
-.kumpula {
-  height: 100vh;
-  background: url("../img/koirapuisto2.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.vallila {
-  height: 100vh;
-  background: url("../img/koirapuisto1.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }

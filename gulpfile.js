@@ -11,7 +11,6 @@ var concat       = require('gulp-concat');
 
 
 
-
     function plumb(emitEnd) {
         return plumber({
             errorHandler: function(error) {
@@ -80,6 +79,7 @@ var concat       = require('gulp-concat');
         gulp.watch('bower_components/**', ['bower']);
 
     });
+
 
 
     gulp.task('default', ['connect', 'jade', 'styles', 'fonts', 'js', 'bower', 'watch']);
