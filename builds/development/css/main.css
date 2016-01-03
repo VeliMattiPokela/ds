@@ -3143,7 +3143,7 @@ ul.no-bullets {
 }
 #parkListing .parkListStatus .smallDogs {
   position: relative;
-  height: 10rem;
+  height: 9.5rem;
   *zoom: 1;
   float: left;
   clear: none;
@@ -3183,7 +3183,7 @@ ul.no-bullets {
   transform: translate(-50%, -50%);
 }
 #parkListing .parkListStatus .largeDogs {
-  height: 10rem;
+  height: 9.5rem;
   position: relative;
   *zoom: 1;
   float: left;
@@ -3224,7 +3224,6 @@ ul.no-bullets {
   transform: translate(-50%, -50%);
 }
 #parkListing .parkListButtons {
-  margin-top: 2rem;
   *zoom: 1;
   float: left;
   clear: none;
@@ -6233,22 +6232,19 @@ a.tooltip span {
 }
 #parkListing .parkListStatus .smallDogs {
   position: relative;
-  height: 10rem;
+  height: 9.5rem;
 }
 #parkListing .parkListStatus .smallDogs img {
   opacity: 0.9;
   width: 5rem;
 }
 #parkListing .parkListStatus .largeDogs {
-  height: 10rem;
+  height: 9.5rem;
   position: relative;
 }
 #parkListing .parkListStatus .largeDogs img {
   opacity: 0.9;
   width: 5rem;
-}
-#parkListing .parkListButtons {
-  margin-top: 2rem;
 }
 
 .parkDetails {
